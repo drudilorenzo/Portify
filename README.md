@@ -37,5 +37,5 @@ Portfolio-maker made for the @MLH Orientation Hackaton
 
 
 **Authors:**
-
 Celina Cywinska - https://github.com/cellinacywinska
+Lorenzo Drudi - https://github.com/LorenzoDrudi
