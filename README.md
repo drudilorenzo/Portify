@@ -1,7 +1,7 @@
 # Portify
 Portfolio-maker made for the @MLH Orientation Hackaton
 
-Features:
+**Features:**
 
 ⚡️ one page layout
 
@@ -9,12 +9,12 @@ Features:
 
 ⚡️ fully responsive 
 
-Why have we created Portify?
+**Why have we created Portify?**
 - everyone needs a web portflio
 - it showcases your work visually
 - our web page ensures highest level of simplicity (no need to register)
 
-Technologies used for the frontend:
+**Technologies used for the frontend:**
 
  🛠️ Java
  
@@ -26,11 +26,16 @@ Technologies used for the frontend:
  
  🛠️ JavaScript
  
+ 
+**Technologies used for the backend:**
 
-How to use:
+ 
+
+**How to use:**
 
 
 
 
-Authors: 
+**Authors:**
+
 Celina Cywinska - https://github.com/cellinacywinska
