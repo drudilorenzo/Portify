@@ -15,11 +15,17 @@ Why have we created Portify?
 - our web page ensures highest level of simplicity (no need to register)
 
 Technologies used for the frontend:
-- Java
-- Java Spring Boot
-- HTML5
-- CSS
-- JavaScript
+
+ 🛠️ Java
+ 
+ 🛠️ Java Spring Boot
+ 
+ 🛠️ HTML5
+ 
+ 🛠️ CSS
+ 
+ 🛠️ JavaScript
+ 
 
 How to use:
 
