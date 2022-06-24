@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+
+<head>
+    <title>Portify</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Add CSS and JS to Thymeleaf</title>
+    <link href="page.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+          integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+<div class="navbar">
+    Portify
+</div>
+<div class="container">
+    <div class="row form-box" style="width:70%">
+
+        <div class="col-md-6">
+            <img class="banner" src="./images/portfolio_undraw.svg"/>
+        </div>
+
+        <div class="col-md-6">
+            <a id="backButton" onclick="onBack()">
+                <div>
+                    <img src="./images/back.png" style="width:20px; margin-top:-3px; margin-right:5px"> Previous
+                    Step
+                </div>
+            </a>
+            <form id="dynamicForm" action="#" th:action="@{/createpage}" th:object="${createpage}" method="post">
+                <input placeholder="Name" type="text" class="input-field" th:field="*{name}"/>
+                <input placeholder="Email" type="text" class="input-field" th:field="*{email}"/>
+                <input placeholder="Linkedin" type="text" class="input-field" th:field="*{linkedin}"/>
+                <input placeholder="Github" type="text" class="input-field" th:field="*{github}"/>
+                <input placeholder="Country" type="text" class="input-field" th:field="*{country}"/>
+                <input placeholder="Education" type="text" class="input-field" th:field="*{education}"/>
+                <input placeholder="Introduction" type="text" class="input-field" th:field="*{introduction}"/>
+                <input placeholder="Profile Picture" type="text" class="input-field" th:field="*{picture}"/>
+                <input placeholder="Bio" type="text" class="input-field" th:field="*{bio}"/>
+                <input placeholder="Skill" type="text" class="input-field" th:field="*{skill}"/>
+                <input placeholder="Resume Link" type="text" class="input-field" th:field="*{resume}"/>
+
+                <!--                                    <input placeholder="Primary Color " type="text" class="input-field" th:field="*{primaryColor}"/>-->
+                <!--                <input placeholder="Secondary Color" type="text" class="input-field" th:field="*{secondaryColor}"/>-->
+
+
+            </form>
+            <button id="nextButton" onclick="onNext()">Next</button>
+        </div>
+    </div>
+</div>
+
+</div>
+
+</div>
+
+<script>
+    var page = -1;
+    var inputGroups = [
+        ["First, Introduce Yourself!", "Name", "Introduction"], ["Share Who You Are.", "Profile Picture", "Bio", "Skill"], ["Resume?", "Resume Link"], ["Lastly, Share Your Links", "Linkedin", "Github"]
+    ];
+
+    function onNext() {
+
+        if(page === inputGroups.length-1) {
+            $("#dynamicForm").submit();
+            return;
+        }
+
+        page++;
+
+        $("#dynamicForm").children("input").each(function () {
+            if(!inputGroups[page].includes($(this).attr('placeholder'))) {
+                $(this).css("display", "none");
+            } else {
+                $(this).css("display", "block");
+            }
+
+        })
+
+        $("#dynamicForm").children("h2").remove();
+        $("#dynamicForm").prepend("<h2 style='margin-bottom:30px'>" + inputGroups[page][0] + "</h2>");
+
+        console.log(page)
+        if(page === inputGroups.length-1) {
+            console.log("LAST PAGE")
+            $("#nextButton").text("Create My Portfolio!");
+        }
+    }
+
+    function onBack() {
+        if (page > 0) page--;
+        $("#dynamicForm").children("input").each(function () {
+            if(!inputGroups[page].includes($(this).attr('placeholder'))) {
+                $(this).css("display", "none");
+            } else {
+                $(this).css("display", "block");
+            }
+
+        })
+        $("#dynamicForm").children("h2").remove();
+        $("#dynamicForm").prepend("<h2 style='margin-bottom:20px'>" + inputGroups[page][0] + "</h2>");
+    }
+
+    onNext();
+
+</script>
+</body>
+
+</html>

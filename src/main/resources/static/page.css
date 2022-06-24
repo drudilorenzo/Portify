@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: black;
+
+}
+
+.banner{
+    margin-top:50%;
+    transform:translate(0,-50%);
+    width:80%;
+}
+
+.logo{
+    width: 300px;
+    cursor: pointer;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.content h2{
+    font-size: 40px;
+    margin-top: 80px;
+}
+
+#nextButton{
+    width: 200px;
+    padding: 15px 0;
+    margin: 20px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    border:none;
+    background-color: #6C63FF;
+    color:white !important;
+    cursor: pointer;
+    display:inherit;
+    margin-top:40px !important;
+    transform:translateX(50%);
+}
+
+
+#dynamicForm{
+margin-top:15%;
+}
+
+.form-box{
+    -webkit-box-shadow: 11px 10px 32px 14px rgba(0,0,0,0.18);
+    -moz-box-shadow: 11px 10px 32px 14px rgba(0,0,0,0.18);
+    box-shadow: 11px 10px 32px 14px rgba(0,0,0,0.18);
+    padding:20px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    border-radius:15px;
+    transform:translate(-50%,-50%);
+    min-height:450px;
+}
+
+
+.input-field:focus{
+    border: 2px solid #6C63FF !important;
+    outline-width:0;
+}
+
+.input-field{
+    width: 95%;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #b8b8b8;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.scroll-bg{
+
+}
+
+.scroll-div{
+    width:1000px;
+    background: linear-gradient(rgba(0,0,0,0.20), rgba(0,0,0,0.20));
+    height:600px;
+    overflow: hidden;
+    overflow-y: scroll;
+    border-radius: 25px;
+
+}
+
+.scroll-object{
+    color:wheat;
+    padding: 25px
+}
+
+.navbar {
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 40px;
+    position: relative;
+    left:20px;
+    top:2px
+
+}
+
+
+

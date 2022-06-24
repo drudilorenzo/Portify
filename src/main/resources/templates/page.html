@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Your portify</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="portify.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+          integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+</head>
+<body>
+<section id="name">
+    <div class="container" style="height:100vh">
+        <div class="row" style="top: 45%;
+    left: 50%;
+    width: 80%;
+    position: absolute;
+    transform: translate(-50%,-50%);">
+            <div id="pictureContainer" class="col-md-5">
+                <img id="picture" th:src="${picture}">
+            </div>
+            <div class="col-md-7">
+                <h4>
+                    <span class="intro"><p th:text="${introduction}"/></span>
+                </h4>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<section id="about">
+
+</section>
+
+<!--<section id="picture">-->
+<!--    <div class="container">-->
+<!--        <h1>-->
+<!--            <img th:src="${picture}">-->
+<!--        </h1>-->
+<!--    </div>-->
+<!--</section>-->
+
+<section style="padding: 10% 10%;">
+    <section id="bio">
+
+        <h1>
+            <span class="bio"><p th:text="${bio}"/></span>
+        </h1>
+    </section>
+
+    <section id="skills">
+        <h1>
+            <span class="skill"><p th:text="${skill}"/></span>
+
+        </h1>
+    </section>
+
+    <section id="links" style="margin-top:10%">
+        <div class="container">
+            <h1>
+                <a target="_blank" th:href="${resume}">
+                    <button id="button1" type="submit">View my resume</button>
+                </a>
+                <a target="_blank" th:href="${github}">
+                    <button id="button2" type="submit">Go to my Github</button>
+                </a>
+                <a target="_blank" th:href="${linkedin}">
+                    <button id="button3" type="submit">Go to my LinkedIn</button>
+                </a>
+            </h1>
+        </div>
+    </section>
+</section>
+
+</body>
+
+</html>

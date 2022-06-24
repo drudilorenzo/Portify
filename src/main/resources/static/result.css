@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: black;
+    font-weight: bold;
+
+}
+
+.banner{
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+}
+
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    margin: 20px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    border:none;
+    background-color: #6C63FF;
+    color:white !important;
+    cursor: pointer;
+    display:inherit;
+
+}
+
+.form-box{
+    -webkit-box-shadow: 11px 10px 32px 14px rgba(0,0,0,0.18);
+    -moz-box-shadow: 11px 10px 32px 14px rgba(0,0,0,0.18);
+    box-shadow: 11px 10px 32px 14px rgba(0,0,0,0.18);
+    padding:30px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    border-radius:15px;
+    transform:translate(-50%,-100%);
+}

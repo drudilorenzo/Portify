@@ -1,0 +1,56 @@
+*{
+    font-family: Trebuchet MS,sans-serif;
+    font-size: 36px;
+    font-weight: 401;
+    line-height: 33px;
+    letter-spacing: 0;
+    color: #6C63FF;
+}
+
+.bio >* {
+    font-size: 24px;
+}
+
+.skill >* {
+    font-size: 18px;
+}
+
+button:hover{
+    background-color:#6C63FF;
+    color:white !important;
+}
+
+button{
+    width: 200px;
+    padding: 10px 0;
+    margin: 30px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px !important;
+    border: solid 2px #6C63FF;
+    background-color: white;
+    color:#6C63FF !important;
+    cursor: pointer;
+    display:inherit;
+    margin-top:40px !important;
+    transform:translate(-10%,-3%);
+    display:inline-block;
+}
+
+#pictureContainer {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: relative;
+
+}
+
+#picture {
+
+    width:40%;
+}
+.footer {
+    padding: 4rem 0;
+    border-top: 1px solid hsla(0,0%,100%,.1);
+    transform: translateY(10%);
+}
