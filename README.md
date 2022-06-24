@@ -56,9 +56,9 @@ git clone git@github.com:LorenzoDrudi/Portify.git
 ```
 Now you have to do a few steps:
 
--Create the db with the [sql script](database/createDB.sql) 
+-Create the db with the [sql script](database/createDB.sql);
 
--Use your DB credentials [here](src/main/resources/application.properties)
+-Use your DB credentials [here](src/main/resources/application.properties).
 
 You can then run it on linux or mac-os with:
 
