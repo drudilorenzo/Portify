@@ -96,3 +96,7 @@ http://localhost:8080/page
 [Celina Cywinska](https://github.com/cellinacywinska)
 
 [Lorenzo Drudi](https://github.com/LorenzoDrudi)
+
+**Full post:**
+
+See the devpost [here](https://devpost.com/software/portify).
