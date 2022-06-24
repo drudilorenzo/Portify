@@ -2,9 +2,9 @@
 Portfolio-maker made for the @MLH Orientation Hackaton
 
 Features:
-- one page layout
-- simple and modern UI design
-- fully responsive 
+⚡️ one page layout
+⚡️ simple and modern UI design
+⚡️ fully responsive 
 
 Why have we created Portify?
 - everyone needs a web portflio
@@ -15,7 +15,7 @@ Technologies used for the frontend:
 - Java
 - Java Spring Boot
 - HTML5
-- css
+- CSS
 - JavaScript
 
 How to use:
