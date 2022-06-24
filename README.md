@@ -2,6 +2,7 @@
 Portfolio-maker made for the @MLH Orientation Hackaton
 
 Features:
+
 ⚡️ one page layout
 
 ⚡️ simple and modern UI design
